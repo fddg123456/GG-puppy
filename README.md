@@ -38,13 +38,13 @@ end)
 
 end)
 
-_G.FRAM-THE-D = state -- true\false
+_G.FRAMTHED = state -- true\false
 
 game:GetService("RunService").RenderStepped:Connect(function()
 
     pcall(function()
 
-        if _G.FRAM-THE-D then
+        if _G.FRAMTHED then
 
 function checklevel()
 
