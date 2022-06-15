@@ -38,6 +38,13 @@ end)
 
 end)
 
+local Section = Tab:NewSection("FRAMTHED")
+
+Section:NewToggle("Flatattack", "Click to use Flatattack", function(state)
+
+local Fast = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+
+local CameraShaker = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
 _G.FRAMTHED = state -- true\false
 
 game:GetService("RunService").RenderStepped:Connect(function()
